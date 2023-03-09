@@ -33,7 +33,7 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
 
 		formElement.submit();
 	});
-
+	console.log(kcContext)
 	return (
 		<Template
 			{...{ kcContext, i18n, doFetchDefaultThemeResources, ...kcProps }}
@@ -120,15 +120,6 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
 											</div>
 										)}
 									</div>
-									<div className={clsx(kcProps.kcFormOptionsWrapperClass)}>
-										{realm.resetPasswordAllowed && (
-											<span>
-												<a tabIndex={5} href={url.loginResetCredentialsUrl}>
-													{msg("doForgotPassword")}
-												</a>
-											</span>
-										)}
-									</div>
 								</div>
 								<div id="kc-form-buttons" className={clsx(kcProps.kcFormGroupClass)}>
 									<input
@@ -159,24 +150,6 @@ export default function Login(props: PageProps<Extract<KcContext, { pageId: "log
 							</form>
 						)}
 					</div>
-					{realm.password && social.providers !== undefined && (
-						<div id="kc-social-providers" className={clsx(kcProps.kcFormSocialAccountContentClass, kcProps.kcFormSocialAccountClass)}>
-							<ul
-								className={clsx(
-									kcProps.kcFormSocialAccountListClass,
-									social.providers.length > 4 && kcProps.kcFormSocialAccountDoubleListClass
-								)}
-							>
-								{social.providers.map(p => (
-									<li key={p.providerId} className={clsx(kcProps.kcFormSocialAccountListLinkClass)}>
-										<a href={p.loginUrl} id={`zocial-${p.alias}`} className={clsx("zocial", p.providerId)}>
-											<span>{p.displayName}</span>
-										</a>
-									</li>
-								))}
-							</ul>
-						</div>
-					)}
 				</div>
 			}
 			infoNode={

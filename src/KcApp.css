@@ -1,0 +1,30 @@
+
+.my-color {
+	color: black;
+}
+
+.my-font {
+	font-family: 'Work Sans', sans-serif;
+}
+
+.my-root-class {
+	background: white;
+}
+
+.my-root-class body {
+	background: url(./assets/background.svg) no-repeat center center fixed;
+}
+
+.my-header span{
+	visibility: hidden;
+}
+
+.my-header:before{
+	content: "";
+	display: block;
+	background: url(./assets/logo_UCA.png) no-repeat;
+	background-size: contain;
+	margin-left: 46%;
+	height: 100px;
+	padding-right: 2px;
+}
