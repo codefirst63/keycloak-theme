@@ -78,11 +78,8 @@ export const { kcContext } = getKcContext<
 		{
 			pageId: "register.ftl",
 			authorizedMailDomains: [
-				"example.com",
-				"another-example.com",
-				"*.yet-another-example.com",
-				"*.example.com",
-				"hello-world.com"
+				"*.com",
+				"*.fr",
 			],
 			// Simulate we got an error with the email field
 			messagesPerField: {

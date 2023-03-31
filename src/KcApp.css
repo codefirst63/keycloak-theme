@@ -24,7 +24,12 @@
 	display: block;
 	background: url(./assets/logo_UCA.png) no-repeat;
 	background-size: contain;
-	margin-left: 46%;
+	margin: 0 auto;
+	max-width: 108px;
 	height: 100px;
 	padding-right: 2px;
+}
+
+#kc-header-wrapper{
+	padding-right: 0px !important;
 }
