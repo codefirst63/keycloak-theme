@@ -1,0 +1,46 @@
+
+body.kcBodyClass {
+    background: url(assets/desktop3.png) no-repeat center center fixed;
+}
+
+.kcFormCardClass.card-pf {
+    background-color: #141816;
+    border-color: #3ddc97;
+}
+
+.kcButtonClass.pf-c-button {
+    background-color: #3ddc97;
+    color: #141816;
+}
+
+.kcInputClass.pf-c-form-control {
+    background-color: #141816;
+    --pf-c-form-control--hover--BorderBottomColor: #3ddc97;
+    --pf-c-form-control--focus--BorderBottomColor: #3ddc97;
+    --pf-c-form-control--m-expanded--BorderBottomColor: #3ddc97;
+}
+
+.kcFormPasswordVisibilityButtonClass.pf-c-button.pf-m-control {
+    background-color: #141816;
+
+}
+
+.kcFormPasswordVisibilityIconShow.fa.fa-eye {
+    color: #3ddc97;
+}
+
+.kcFormPasswordVisibilityIconHide.fa.fa-eye-slash {
+    color: red;
+}
+
+.kcInputClass{
+    color: #62929e;
+}
+
+#kc-page-title {
+    color: #62929e;
+}
+
+#kc-form-login {
+    color: #62929e;
+}
